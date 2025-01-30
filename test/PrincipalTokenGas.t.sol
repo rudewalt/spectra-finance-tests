@@ -46,15 +46,14 @@ contract PrincipalTokenGas is Test {
         vm.warp(pt.maturity() + 1);
 
         uint256 shares = 1e18;
+
         uint256 gasBefore = gasleft();
         pt.redeemForIBT(shares, user, user);
-        console.log("Gas used %d", gasBefore - gasleft());
+        console.log("1st call gas used %d", gasBefore - gasleft());
 
         gasBefore = gasleft();
-
         pt.redeemForIBT(shares, user, user);
-
-        console.log("Gas used %d", gasBefore - gasleft());
+        console.log("2nd call gas used %d", gasBefore - gasleft());
 
         vm.stopPrank();
     }
