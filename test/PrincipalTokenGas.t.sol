@@ -10,9 +10,9 @@ contract PrincipalTokenGas is Test {
 
     IPrincipalToken public pt;
 
-    address public ptSwInwstETHs = 0x4ae0154F83427A5864e5de6513a47dAC9E5D5a69; // PT-sw-inwstETHs
-    address public ptwstUSR = 0xD0097149AA4CC0d0e1fC99B8BD73fC17dC32C1E9; // PT-wstUSR
-    address public ptSwynETH = 0xbBA9b8E2F698d2B1d79b6ee9FB05ac2520696F6d; // PT-sw-
+    address public ptSwInwstETHs = 0x4ae0154F83427A5864e5de6513a47dAC9E5D5a69; // PT-sw-inwstETHs-1752969615
+    address public ptwstUSR = 0xD0097149AA4CC0d0e1fC99B8BD73fC17dC32C1E9; // PT-wstUSR-1740182579
+    address public ptSwynETH = 0xbBA9b8E2F698d2B1d79b6ee9FB05ac2520696F6d; // PT-sw-ynETH-1743379491
 
     address public user = address(10);
 
